@@ -1,0 +1,33 @@
+.journey-section{
+  padding-bottom:250px;
+  .container{
+    .title{
+      font-size:40px;
+      text-transform: uppercase;
+      font-family: Montserrat-ExtraBold, sans-serif;
+    }
+    @media only screen and (max-width: 500px) {
+      .title{
+        font-size:25px;
+      }
+    }
+  }
+  .journeyRightCloud{
+    z-index: 100;
+    width: 20%;
+    margin-left:80%;
+    display: block;
+    min-height: 1px;
+  }
+  .cloud-parallax-img {
+    overflow: visible;
+    width: 100% !important;
+    height: auto !important;
+    left:0;
+    z-index:100;
+  }
+  .cloud-parallax {
+    overflow: visible !important;
+    z-index: -100;
+  }
+}

@@ -1,0 +1,67 @@
+.Tabs {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  font-family: 'Yantramanav';
+  font-size: 18px;
+}
+.Tabs .Tabs_Tab {
+  display: inline-block;
+  padding: 1em;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+.Tabs .Tabs_Tab .TabLine {
+  height: 3px;
+  background: transparent;
+}
+.Tabs .Tabs_Tab .TabLine0 {
+  width: 111px;
+  margin: 0 auto;
+}
+.Tabs .Tabs_Tab .TabLine1 {
+  width: 150px;
+  margin: 0 auto;
+}
+.Tabs .Tabs_Tab .TabLine2 {
+  width: 156px;
+  margin: 0 auto;
+}
+.Tabs .Tabs_Tab .TabLine3 {
+  width: 160px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 992px) {
+  .Tabs .tab-col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .Tabs .tab-col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 434px) {
+  .Tabs .Tabs_Tab {
+    width: 80%;
+  }
+}
+.Tabs .Tabs_Tab:hover,
+.Tabs .Tabs_Tab-active {
+  background: transparent;
+  color: #01bdfd;
+}
+.Tabs .Tabs_Tab:hover .TabLine,
+.Tabs .Tabs_Tab-active .TabLine {
+  background: #01bdfd;
+}
+.Tabs .Tabs_Underline {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-bottom: 3px solid orange;
+}

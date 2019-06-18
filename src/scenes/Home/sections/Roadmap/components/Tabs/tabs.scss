@@ -1,0 +1,65 @@
+.Tabs{
+  position:relative;
+  display:inline-block;
+  margin:0 auto;
+  font-family: "Yantramanav";
+  font-size: 18px;
+  .Tabs_Tab{
+    display:inline-block;
+    padding:1em;
+    background: transparent;
+    color:white;
+    cursor:pointer;
+    .TabLine{
+      height:3px;
+      background:transparent;
+    }
+    .TabLine0{
+      width:111px;
+      margin:0 auto;
+    }
+    .TabLine1{
+      width:150px;
+      margin:0 auto;
+    }
+    .TabLine2{
+      width:156px;
+      margin:0 auto;
+    }
+    .TabLine3{
+      width:160px;
+      margin:0 auto;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .tab-col-6{
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    .tab-col-6{
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  @media only screen and (max-width: 434px) {
+    .Tabs_Tab{
+      width:80%;
+    }
+  }
+  .Tabs_Tab:hover,.Tabs_Tab-active{
+    background:transparent;
+    color:#01bdfd;
+    .TabLine{
+      background:#01bdfd;
+    }
+  }
+  .Tabs_Underline{
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    border-bottom:3px solid orange;
+  }
+}

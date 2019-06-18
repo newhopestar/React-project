@@ -1,0 +1,27 @@
+.benefit-feature {
+  text-align: center;
+  padding: 40px 40px;
+  @media only screen and (max-width: 767px) {
+    padding: 40px 0;
+  }
+  .feature-imageContainer {
+    img {
+      height: 120px;
+    }
+  }
+
+  .feature-title {
+    color: #010248;
+    font-size: 1.8em;
+    text-align: center;
+    font-family: "Yantramanav";
+    font-weight: bold;
+  }
+
+  .feature-description {
+    color: #979797;
+    text-align: center;
+    font-family: "Yantramanav";
+    font-size:18px;
+  }
+}

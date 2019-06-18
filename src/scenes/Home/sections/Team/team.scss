@@ -1,0 +1,112 @@
+.team-section{
+  background: url('./images/team_bg.png') no-repeat;
+  background-size: 100% 100%;
+  .container{
+    .title{
+      font-size:4.3em;
+      font-family:Montserrat-ExtraBold, sans-serif;
+    }
+    @media only screen and (min-width: 600px) {
+      .title{
+        font-size: 4.3em;
+      }
+    }
+    @media only screen and (max-width: 599px) {
+      .title{
+        font-size: 60px;
+      }
+    }
+    @media only screen and (max-width: 500px) {
+      .title{
+        font-size: 55px;
+      }
+    }
+    .teamDescription{
+      font-size:20px;
+      width:70%;
+      margin:0 auto;
+      font-family:"Yantramanav";
+    }
+    @media only screen and (max-width: 992px) {
+      .teamDescription{
+        font-size:17px;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .teamDescription{
+        font-size:16px;
+      }
+    }
+    @media only screen and (max-width: 576px) {
+      .teamDescription{
+        font-size:15px;
+        width:90%;
+      }
+    }
+  }
+  .logo{
+    position:absolute;
+    right:0;
+    width:50%;
+    transform:translateY(-250px);
+  }
+  .members{
+    @media (min-width: 1400px) {
+      .carousel-div {
+        flex: 0 0 130%;
+        max-width: 150%;
+        transform: translateX(-301px);
+      }
+    }
+    @media only screen and (max-width: 1400px){
+      .carousel-div {
+        flex: 0 0 100%;
+        max-width: 100%;
+        transform: translateX(0px);
+      }
+    }
+    .carousel{
+      z-index:100;
+      .carousel-control{
+        .arrowLeft{
+          width: 80px;
+          height: 80px;
+          background: linear-gradient(to left, #243eff, #196cff, #00d2ff);
+          border-radius: 40px;
+          padding-top: 22px;
+          position: absolute;
+          left: -57px;
+          top: 230px;
+          opacity:0.8;
+          z-index:100;
+        }
+        .arrowRight{
+          width: 80px;
+          height: 80px;
+          background: linear-gradient(to right, #243eff, #196cff, #00d2ff);
+          border-radius: 40px;
+          padding-top: 22px;
+          position: absolute;
+          right: -65px;
+          top: 230px;
+          opacity:0.8;
+          z-index:100;
+        }
+        @media only screen and (max-width: 767px) {
+          .arrowLeft{
+            left: -47px;
+          }
+          .arrowRight{
+            right:-54px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .team-section {
+    background: url('./images/team_bg_small.png') no-repeat;
+    background-size: 100% 100%;
+  }
+}

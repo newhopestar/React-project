@@ -1,0 +1,48 @@
+.item{
+  .itemTitle{
+    font-family: "Yantramanav";
+    font-size:18px;
+    text-transform: uppercase;
+    .progressValue{
+      float:right;
+      .value{
+        color:#c130ec;
+      }
+      .percentage{
+        background:linear-gradient(to right, #c130ec,#c130ec,#c130ec,#0002eb,#0002eb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+  @media only screen and (max-width: 485px) {
+    .itemTitle{
+      font-size:16px;
+    }
+  }
+  @media only screen and (max-width: 440px) {
+    .itemTitle{
+      font-size:15px;
+    }
+  }
+  @media only screen and (max-width: 410px) {
+    .itemTitle{
+      font-size:14px;
+    }
+  }
+  @media only screen and (max-width: 390px) {
+    .itemTitle{
+      font-size:13px;
+    }
+  }
+  @media only screen and (max-width: 365px) {
+    .itemTitle{
+      font-size:12px;
+    }
+  }
+  @media only screen and (max-width: 330px) {
+    .itemTitle{
+      font-size:11px;
+    }
+  }
+}
